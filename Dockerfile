@@ -4,6 +4,7 @@ ENV ESLINT_VERSION=4.19.1
 
 RUN set -ex \
  && npm install -g \
+      babel-eslint@latest \
       eslint@${ESLINT_VERSION} \
       eslint-config-standard@latest \
       eslint-plugin-import@latest \

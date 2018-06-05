@@ -9,6 +9,7 @@ RUN set -ex \
       eslint-plugin-node@latest \
       eslint-plugin-promise@latest \
       eslint-plugin-standard@latest \
+      eslint-plugin-vue@latest \
  && rm -rf /usr/share/man /tmp/* \
            /root/.npm /root/.node-gyp \
            /usr/lib/node_modules/npm/man \

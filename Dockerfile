@@ -5,6 +5,7 @@ ENV ESLINT_VERSION=4.19.1
 RUN set -ex \
  && npm install -g \
       eslint@${ESLINT_VERSION} \
+      eslint-config-standard@latest \
       eslint-plugin-import@latest \
       eslint-plugin-node@latest \
       eslint-plugin-promise@latest \

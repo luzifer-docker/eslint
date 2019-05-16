@@ -1,6 +1,6 @@
 FROM node:9-alpine
 
-ENV ESLINT_VERSION=4.19.1
+ENV ESLINT_VERSION=5.16.0
 
 RUN set -ex \
  && npm install -g \

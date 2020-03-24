@@ -16,6 +16,6 @@ RUN set -ex \
            /root/.npm /root/.node-gyp \
            /usr/lib/node_modules/npm/man \
            /usr/lib/node_modules/npm/doc \
-           /usr/lib/node_modules/npm/html
+           /usr/lib/node_modules/npm/html || true
 
 ENTRYPOINT ["/usr/local/bin/eslint"]

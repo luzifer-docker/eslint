@@ -1,4 +1,4 @@
-FROM node:9-alpine
+FROM node:10-alpine
 
 ENV ESLINT_VERSION=5.16.0
 
@@ -12,10 +12,10 @@ RUN set -ex \
       eslint-plugin-promise@latest \
       eslint-plugin-standard@latest \
       eslint-plugin-vue@latest \
- && rm -rf /usr/share/man /tmp/* \
+ && ( rm -rf /usr/share/man /tmp/* \
            /root/.npm /root/.node-gyp \
            /usr/lib/node_modules/npm/man \
            /usr/lib/node_modules/npm/doc \
-           /usr/lib/node_modules/npm/html || true
+           /usr/lib/node_modules/npm/html || true )
 
 ENTRYPOINT ["/usr/local/bin/eslint"]
